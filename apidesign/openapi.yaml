@@ -1,0 +1,32 @@
+openapi: 3.0.3
+info:
+  title: legacystatementdeliveryapi-1-0-0
+  version: 1.0.0
+  description: Operational baseline generated from observed Kong Konnect configuration.
+servers:
+- url: https://statement-print-bridge.svc.prod.aldermoor.example
+paths:
+  /legacy/statements/1.0.0/deliveries:
+    post:
+      operationId: postLegacyStatements100Deliveries_6a4894fb
+      summary: legacystatementdeliveryapi-1-0-0--postdeliveries
+      description: Inferred from Kong routing. Request and response business schemas are not observable.
+      x-kong-route-ids:
+      - dc1715c2-5ecc-4582-8ae6-bb941bdbd443
+      x-kong-plugin-summary:
+      - acl
+      - jwt
+      - rate-limiting
+      - request-transformer
+      responses:
+        default:
+          description: Runtime response semantics are not observable from Kong configuration.
+x-kong-source:
+  serviceId: 178b0bdb-ea8f-4b95-81fb-c0bd582ace61
+  snapshotFingerprint: 07cea5136085320a7d1a760a482942009d20bec1206588859bbf39aee15301c0
+  controlPlaneId: edb363b5-777a-445c-a190-5ca0d53c0c12
+x-kong-unmapped-routes:
+- routeId: 0025c410-9b8d-4aa4-bb11-2bbdf19aae9a
+  routeName: legacystatementdeliveryapi-1-0-0--getdeliveries-jobid
+  reasons:
+  - REGEX_OR_UNSUPPORTED_PATH
