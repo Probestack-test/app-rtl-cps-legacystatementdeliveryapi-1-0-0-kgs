@@ -1,0 +1,41 @@
+{
+  "info": {
+    "name": "legacystatementdeliveryapi-1-0-0 Postman Collection",
+    "description": "Operational baseline generated from observed Kong Konnect configuration.\n\nOpenAPI version: 3.0.3",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "auth": {
+    "type": "noauth"
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "https://statement-print-bridge.svc.prod.aldermoor.example",
+      "type": "string",
+      "description": "Override with the base URL of the deployed Kong gateway."
+    }
+  ],
+  "item": [
+    {
+      "name": "legacystatementdeliveryapi-1-0-0--postdeliveries",
+      "request": {
+        "method": "POST",
+        "description": "legacystatementdeliveryapi-1-0-0--postdeliveries\n\nResponses:\n- default: Runtime response semantics are not observable from Kong configuration.",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/legacy/statements/1.0.0/deliveries",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "legacy",
+            "statements",
+            "1.0.0",
+            "deliveries"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
